@@ -1,0 +1,6 @@
+{
+    "name": "project",
+    "version": "0.0.0",
+    "module": "{{cookiecutter.name|capitalize}}",
+    "resolver": "nightly-2023-02-09"
+}

@@ -1,0 +1,38 @@
+name: {{cookiecutter.name}}
+version: {{cookiecutter.version}}
+
+ghc-options: -Wall -fno-warn-incomplete-uni-patterns
+
+dependencies:
+  - base >=4.9 && <5
+
+library:
+  source-dirs:        src
+
+executables:
+  {{cookiecutter.name}}:
+    main: Main.hs
+    source-dirs: app
+    ghc-options: -threaded -rtsopts -with-rtsopts=-N
+    dependencies:
+      - {{cookiecutter.name}}
+
+tests:
+  {{cookiecutter.name}}-spec:
+    main: hspec.hs
+    source-dirs: test
+    ghc-options: -threaded -rtsopts -with-rtsopts=-N
+    dependencies:
+      - {{cookiecutter.name}}
+      - hspec
+      - QuickCheck
+    build-tools: hspec-discover
+
+benchmarks:
+  {{cookiecutter.name}}-bench:
+    main: Main.hs
+    source-dirs: benchmarks
+    ghc-options: -threaded -rtsopts -with-rtsopts=-N
+    dependencies:
+      - {{cookiecutter.name}}
+      - criterion
