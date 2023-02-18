@@ -18,15 +18,13 @@ executables:
       - {{cookiecutter.name}}
 
 tests:
-  {{cookiecutter.name}}-spec:
-    main: hspec.hs
+  tests:
+    main: {{cookiecutter.module}}Tests.hs
     source-dirs: test
     ghc-options: -threaded -rtsopts -with-rtsopts=-N
     dependencies:
       - {{cookiecutter.name}}
-      - hspec
-      - QuickCheck
-    build-tools: hspec-discover
+      - HUnit
 
 benchmarks:
   {{cookiecutter.name}}-bench:

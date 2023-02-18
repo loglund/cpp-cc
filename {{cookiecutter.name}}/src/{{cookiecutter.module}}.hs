@@ -1,4 +1,4 @@
 module {{cookiecutter.module}} (someFunc) where
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+someFunc :: () -> [Char]
+someFunc = return ("someFunc")

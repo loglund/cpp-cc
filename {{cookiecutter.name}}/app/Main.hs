@@ -3,5 +3,5 @@ module Main where
 import {{cookiecutter.module}}
 
 main :: IO ()
-main = someFunc
+main = putStrLn (someFunc ())
 

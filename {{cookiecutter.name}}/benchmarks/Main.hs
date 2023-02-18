@@ -5,4 +5,4 @@ import Criterion
 import Criterion.Main
 
 main :: IO ()
-main = someFunc
+main = putStrLn (someFunc ())
