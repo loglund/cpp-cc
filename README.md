@@ -1,2 +1,2 @@
 
-# haskell-cookiecutter
+# C++ CookieCutter template

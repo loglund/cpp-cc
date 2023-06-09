@@ -1,6 +1,0 @@
-resolver: {{cookiecutter.resolver}}
-
-packages:
-  - .
-# extra-deps:
-# -
