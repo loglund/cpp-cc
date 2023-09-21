@@ -1,6 +1,6 @@
 #include "version.hpp"
 
-namespace {{cookiecutter.name}} // namespace
+namespace {{cookiecutter.name}}
 {
 
 std::string version()
@@ -8,4 +8,4 @@ std::string version()
     return std::string{ "{{cookiecutter.version}}"};
 }
 
-} // namespace {{cookiecutter.namespace}}
+}
