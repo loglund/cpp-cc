@@ -7,6 +7,6 @@
 #include <{{cookiecutter.name}}/version.hpp>
 
 TEST(test_some, return_value_of_some_method) {
-  auto version = {{cookiecutter.namespace}}::version();
+  auto version = {{cookiecutter.name}}::version();
   EXPECT_EQ(version, "{{cookiecutter.version}}");
 }

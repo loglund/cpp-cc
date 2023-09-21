@@ -4,7 +4,7 @@
 
 int main()
 {
-    std::cout << {{cookiecutter.namespace}}::version() << std::endl;
+    std::cout << {{cookiecutter.name}}::version() << std::endl;
 
     return 0;
 }

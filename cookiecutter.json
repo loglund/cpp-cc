@@ -1,6 +1,4 @@
 {
     "name": "project",
-    "version": "0.0.0",
-    "namespace": "project",
-    "version_namespace": "PROJECT_VERSION"
+    "version": "0.0.0"
 }
